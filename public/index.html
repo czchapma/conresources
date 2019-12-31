@@ -67,6 +67,14 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script>
+		function submitCaptcha(token) {
+			$('#submit-confirm').show();
+			$("#contact-form").submit();
+		}
+	</script>
+
 	</head>
 	<body>
 	<header role="banner" id="fh5co-header">
@@ -471,7 +479,7 @@ Representatives will interact with attendees, hand out convention safety resourc
 			<div class="row">
 				<div class="col-md-6">
 					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-					<form action="https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse" method="post" target="hidden_iframe" onsubmit="document.getElementById('submit-confirm').style.visibility='visible';">
+					<form id="contact-form" action="https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse" method="post" target="hidden_iframe">
 						<div class="form-group">
 							<label for="name">Name</label>
 							<input class="form-control" name="entry.421228684" id="name" type="name"/>
@@ -522,8 +530,9 @@ Representatives will interact with attendees, hand out convention safety resourc
 						 <textarea name="entry.718641655" class="form-control" id="additional-info"></textarea>
 					 </div>
 
-						<button class="btn btn-primary" type="submit" onclick="this.value='Thanks! We'll be in touch'">Submit</button>
-						<label id="submit-confirm" style="visibility: hidden;">Sent! We'll be in touch soon!</label>
+						<button
+						class="btn btn-primary g-recaptcha" data-sitekey="6Lcsf2MUAAAAAHyrzDMXiiegQm6_SMEkjKVU7osz" data-callback='submitCaptcha'>Submit</button>
+						<label id="submit-confirm" style="display: none;">Sent! We'll be in touch soon!</label>
 					</div>
 
 					<div class="col-md-6">
@@ -553,7 +562,7 @@ Representatives will interact with attendees, hand out convention safety resourc
 		<div class="container">
 			<div class="row row-bottom-padded-sm">
 				<div class="col-md-12">
-					<p class="copyright text-center">&copy; 2019 <a href="http://uplifttogether.org">Uplift</a>. All Rights Reserved. <br> Template by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a></p>
+					<p class="copyright text-center">&copy; 2020 <a href="http://uplifttogether.org">Uplift</a>. All Rights Reserved. <br> Template by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a></p>
 				</div>
 			</div>
 		</div>

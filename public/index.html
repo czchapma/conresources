@@ -478,9 +478,11 @@ You can include these in the gift bags for all attendees or we can hand these ou
 			<div class="row">
 				<div class="col-md-6">
 					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-					<form id="contact-form" action="https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse" method="post" target="hidden_iframe">
+					<!-- <form id="contact-form" action="https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse" method="post" target="hidden_iframe"> -->
+					<form id="contact-form" method="post" target="hidden_iframe">
 
-						<label id=name-extra style="display:none;">name <input id=name-extra></label>
+						<label for="name-extra" style="display:none;">name</label>
+						<input class="form-control" id=name-extra type="name-extra" style="display:none;"/>
 
 						<div class="form-group">
 							<label for="name">Name</label>
@@ -532,8 +534,11 @@ You can include these in the gift bags for all attendees or we can hand these ou
 						 <textarea name="entry.718641655" class="form-control" id="additional-info"></textarea>
 					 </div>
 
-						<button
-						class="btn btn-primary g-recaptcha" data-sitekey="6Lcsf2MUAAAAAHyrzDMXiiegQm6_SMEkjKVU7osz" data-callback='submitCaptcha'>Submit</button>
+						<!-- <button
+						class="btn btn-primary g-recaptcha" data-sitekey="6Lcsf2MUAAAAAHyrzDMXiiegQm6_SMEkjKVU7osz" data-callback='submitCaptcha'>Submit</button> -->
+
+						<button type="button" id="submit-form" class="btn btn-primary g-recaptcha" data-sitekey="6Lcsf2MUAAAAAHyrzDMXiiegQm6_SMEkjKVU7osz" data-callback='submitCaptcha'>Submit</button>
+
 						<label id="submit-confirm" style="display: none;">Sent! We'll be in touch soon!</label>
 					</div>
 

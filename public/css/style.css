@@ -23,8 +23,9 @@ body {
   position: relative;
 }
 
-/* #name-extra { display: none; } */
-/* moved this to index.html directly in the label's tag */
+/* #name-extra-label { display: none; }
+#name-extra { display: none; } */
+
 
 .margin-top {
   margin-top: 28px;

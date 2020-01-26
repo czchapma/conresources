@@ -442,16 +442,17 @@
 		$('submit-form').click( function() {
 			//post to form only if the name-extra label is empty
 			if ( $('name-extra').val = '') {
+				$('contact-form').submit();
 
-				$.ajax({
-			        url: 'https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse',
-			        type: 'post',
-			        dataType: 'json',
-			        data: $('contact-form').serialize(),
-			        // success: function(data) {
-			        //
-			        //          }
-			    });
+				// $.ajax({
+			    //     url: 'https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse',
+			    //     type: 'post',
+			    //     dataType: 'json',
+			    //     data: $('contact-form').serialize(),
+			    //     // success: function(data) {
+			    //     //
+			    //     //          }
+			    // });
 
 			}
 

@@ -437,26 +437,30 @@
 
 	};
 
-	//Spam detection and submit Button
+	var checkName = function(){
+		if ($('name').val().length() != 0) {
+			return True;
+		}
+	}
+
 	var submitButton = function() {
 		$('submit-form').click( function() {
-			//post to form only if the name-extra label is empty
-			if ( $('name-extra').val = '') {
-				$('contact-form').submit();
+			var check = checkName();
 
-				// $.ajax({
-			    //     url: 'https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse',
-			    //     type: 'post',
-			    //     dataType: 'json',
-			    //     data: $('contact-form').serialize(),
-			    //     // success: function(data) {
-			    //     //
-			    //     //          }
-			    // });
-
+			if (check) {
+				$.ajax({
+			        url: 'https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse',
+			        type: 'post',
+			        dataType: 'json',
+			        data: $('contact-form').serialize(),
+			        // success: function(data) {
+			        //
+			        //          }
+			    });
 			}
 
 		});
+
 	}
 
 
@@ -478,6 +482,7 @@
 		pricingWayPoint();
 		pressWayPoint();
 
+		checkName();
 		submitButton();
 
 	});

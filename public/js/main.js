@@ -437,11 +437,22 @@
 
 	};
 
-	var checkName = function(){
+	function checkName(){
+		console.log("check name");
+
 		if ($('name').val().length() != 0) {
 			return True;
 		}
 	}
+
+	// var checkName = function(){
+	//
+	// 	console.log("check name");
+	//
+	// 	if ($('name').val().length() != 0) {
+	// 		return True;
+	// 	}
+	// }
 
 	var submitButton = function() {
 		$('submit-form').click( function() {

@@ -5,6 +5,38 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
 	<head>
+
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<!-- Owl Carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+
+		<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+		<script src="js/jquery.style.switcher.js"></script>
+		<script>
+		$(function(){
+			$('#colour-variations ul').styleSwitcher({
+				defaultThemeId: 'theme-switch',
+				hasPreview: false,
+				cookie: {
+		          	expires: 30,
+		          	isManagingLoad: true
+		      	}
+			});
+			$('.option-toggle').click(function() {
+				$('#colour-variations').toggleClass('sleep');
+			});
+		});
+		</script>
+
+	<script src="js/main.js"></script>
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Convention Resources</title>
@@ -512,10 +544,12 @@ You can include these in the gift bags for all attendees or we can hand these ou
 			<div class="row">
 				<div class="col-md-6">
 					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-					<form id="contact-form" action="https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse" method="post" target="hidden_iframe">
+					<!-- <form id="contact-form" action="https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse" method="post" target="hidden_iframe"> -->
 					<!-- the url in action seems to be necessary here -->
-					
-					<!-- <form id="contact-form" method="post" target="hidden_iframe"> -->
+
+					<!-- <form id="contact-form" method="post" onsubmit="checkName()" action="https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse" target="hidden_iframe"> -->
+					<form id="contact-form" onsubmit="checkName()" target="hidden_iframe">
+
 					<!-- <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdqWJT5q7bjp2y-mLpffbm9FLq5h2JSwFKXz36LSGWlHNQIgA/viewform?usp=sf_link" method="post" target="hidden_iframe"> -->
 
 						<!-- <div class="form-group">
@@ -573,7 +607,8 @@ You can include these in the gift bags for all attendees or we can hand these ou
 						 <textarea name="entry.718641655" class="form-control" id="additional-info"></textarea>
 					 	</div>
 
-						<button id="submit-form" class="btn btn-primary g-recaptcha" onclick='submitButton()' data-sitekey="6Lcsf2MUAAAAAHyrzDMXiiegQm6_SMEkjKVU7osz" data-callback='submitCaptcha'>Submit</button>
+						<input type="submit"/>
+						<!-- <button id="submit-form" class="btn btn-primary g-recaptcha" onclick='submitButton()' data-sitekey="6Lcsf2MUAAAAAHyrzDMXiiegQm6_SMEkjKVU7osz" data-callback='submitCaptcha'>Submit</button> -->
 
 						<label id="submit-confirm" style="display: none;">Sent! We'll be in touch soon!</label>
 					</div>
@@ -612,38 +647,11 @@ You can include these in the gift bags for all attendees or we can hand these ou
 	</footer>
 
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Owl Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
 
-	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
-	<script src="js/jquery.style.switcher.js"></script>
-	<script>
-	$(function(){
-		$('#colour-variations ul').styleSwitcher({
-			defaultThemeId: 'theme-switch',
-			hasPreview: false,
-			cookie: {
-	          	expires: 30,
-	          	isManagingLoad: true
-	      	}
-		});
-		$('.option-toggle').click(function() {
-			$('#colour-variations').toggleClass('sleep');
-		});
-	});
-	</script>
 	<!-- End demo purposes only -->
 
 	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
+	<!-- <script src="js/main.js"></script> -->
 
 	</body>
 </html>

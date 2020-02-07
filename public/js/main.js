@@ -461,25 +461,36 @@ $(document).ready(function () {
 
 
 var checkName = function(){
-	console.log("check name");
+	//console.log("check name");
 	if ($('#name').val().length != 0) {
-		return true;
+		//console.log("checked!");
+		$.ajax({
+					url: 'https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse',
+					type: 'post',
+					dataType: 'json',
+					data: $('#contact-form').serialize(),
+					// success: function(data) {
+					//
+					//          }
+			});
 	}
 }
 
-function submitButton() {
-	$('submit-form').click( function() {
-		var check = checkName();
-			if (check) {
-				$.ajax({
-							url: 'https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse',
-							type: 'post',
-							dataType: 'json',
-							data: $('contact-form').serialize(),
-							// success: function(data) {
-							//
-							//          }
-					});
-			}
-		});
-	}
+// function submitButton() {
+// 	$('#submit-form').click( function() {
+// 		var check = checkName();
+// 			if (check) {
+// 				console.log("checked, should submit");
+//
+// 				$.ajax({
+// 							url: 'https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse',
+// 							type: 'post',
+// 							dataType: 'json',
+// 							data: $('contact-form').serialize(),
+// 							// success: function(data) {
+// 							//
+// 							//          }
+// 					});
+// 			}
+// 		});
+// }

@@ -561,7 +561,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-features .fh5co-service .fh5co-icon i {
   font-size: 40px;
-  color: rgb(67,151,168);
+  color: #fff;
+  background-color: rgb(67,151,168);
 }
 #fh5co-features .fh5co-service .fh5co-desc {
   width: 80%;
@@ -783,18 +784,20 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: rgb(67,151,168);
-  color: #fff;
+  color: rgb(67,151,168);
+  /* background-color: #fff; */
+  background-color: rgb(67,151,168);
   border: none !important;
   border: 2px solid transparent !important;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: rgb(67,151,168);
+  color: rgb(67,151,168);
+  background-color: #fff;
 }
 .btn:hover, .btn:active, .btn:focus {
   background: #393e46 !important;
-  color: #fff;
+  color: rgb(67,151,168);
   outline: none !important;
 }
 .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
@@ -1052,7 +1055,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .owl-carousel-fullwidth .item .fh5co-owl-text a {
-  color: white;
+  color: rgba(67,151,168);
+  background-color: rgba(255,255,255);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .owl-carousel-fullwidth .item .fh5co-owl-text a:hover {
@@ -1061,9 +1065,11 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid white;
 }
 .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead, .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead-2, .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-sub-lead {
-  color: #fff;
+  background-color: rgba(67,151,168, 0.9);
+  color: rgb(255,255,255);
   margin: 0;
-  padding: 0;
+  padding: 3%;
+  border-radius: 15px;
 }
 .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead {
   font-weight: 700;
@@ -1071,16 +1077,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #fff;
   font-size: 50px;
   line-height: 50px;
-  color: #fff;
+  background-color: rgba(67,151,168, 0.9);
+  color: rgb(255,255,255);
+  border-radius: 15px;
+  padding: 3%;
 }
 @media screen and (max-width: 768px) {
   .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead {
     margin-bottom: 20px;
     font-size: 30px;
     line-height: 30px;
+    background-color: rgba(67,151,168, 0.9);
+    color: rgb(255,255,255);
+    border-radius: 15px;
+    padding: 3%;
   }
 }
 .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-sub-lead {
@@ -1089,7 +1101,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 42px;
   font-weight: 100;
   margin-bottom: 30px;
-  color: white;
 }
 @media screen and (max-width: 768px) {
   .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-sub-lead {

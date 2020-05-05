@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://conresources.org/</loc>
+    <lastmod>2020-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+      <image:image>
+        <image:loc>https://conresources.org/images/icon.png</image:loc>
+        <image:title>Icon</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/codeofconduct.jpeg</image:loc>
+        <image:title>Grid of people connected by social media icons.</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/friends.jpg</image:loc>
+        <image:title>When I say no it means no</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/beyond_consent.jpeg</image:loc>
+        <image:title>A bowl of pins that say 'connect'</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/sexting.jpg</image:loc>
+        <image:title>When I say no it means no</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/banishabuse.JPG</image:loc>
+        <image:title>Recognizing Abuse Online and Off</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/understanding_consent.png</image:loc>
+        <image:title>Consent is rad</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/eatc_logo.png</image:loc>
+        <image:title>elephant at the con logo</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/safer-community.JPG</image:loc>
+        <image:title>Safer community guidelines</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://conresources.org/index.html</loc>
+    <lastmod>2020-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://conresources.org/images/icon.png</image:loc>
+        <image:title>Icon</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/codeofconduct.jpeg</image:loc>
+        <image:title>Grid of people connected by social media icons.</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/friends.jpg</image:loc>
+        <image:title>When I say no it means no</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/beyond_consent.jpeg</image:loc>
+        <image:title>A bowl of pins that say 'connect'</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/sexting.jpg</image:loc>
+        <image:title>When I say no it means no</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/banishabuse.JPG</image:loc>
+        <image:title>Recognizing Abuse Online and Off</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/understanding_consent.png</image:loc>
+        <image:title>Consent is rad</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/eatc_logo.png</image:loc>
+        <image:title>elephant at the con logo</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://conresources.org/images/safer-community.JPG</image:loc>
+        <image:title>Safer community guidelines</image:title>
+      </image:image>
+  </url>
+</urlset>

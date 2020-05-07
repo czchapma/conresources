@@ -1,17 +1,20 @@
+## Convention Resources by Uplift
+Resources for convention organizers by Uplift, a nonprofit combining sexual violence advocacy with online communities.
 
-TITLE: 
-Crew - Responsive Free HTML5 template
+### Build
+This repository contains code for conresources.org.
 
-AUTHOR:
-DESIGNED & DEVELOPED by FREEHTML5.co
+The website is deployed through Firebase.
 
-Website: http://freehtml5.co/
-Twitter: http://twitter.com/fh5co
-Facebook: http://facebook.com/fh5co
+### Main files
+The content of the site is in `index.html`.
+
+Styling files are in the `css` and `js` folders.
+
+Images of the site are in the `images` folder.
 
 
-CREDITS:
-
+### Credits:
 Bootstrap
 http://getbootstrap.com/
 

@@ -461,17 +461,18 @@ $(document).ready(function () {
 
 
 var checkName = function(){
-	//console.log("check name");
-	if ($('#name').val().length != 0) {
-		//console.log("checked!");
+	if ($('#name').val().length != 0 && !$('#email').val().includes('domain')) {
 		$.ajax({
 			url: 'https://docs.google.com/a/uplifttogether.org/forms/d/e/1FAIpQLScWYeQEIY2mzdW-qIt8MyQyswQaLyXEGZg7CuR4lxbnOwTozg/formResponse',
 			type: 'post',
 			dataType: 'json',
 			data: $('#contact-form').serialize(),
 			// success: function(data) {
-			//
-			//          }
+			// 	$('#submit-confirm').show();
+			// 	console.log("submitted");
+			// }
 		});
+
+		$('#submit-confirm').show();
 	}
 }
